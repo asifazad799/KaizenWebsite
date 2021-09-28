@@ -54,10 +54,11 @@ $(document).ready(()=>{
                 data:$("#form1").serialize(),
                 method:"post",
                 success:((res)=>{
-                    alert("form submission success");
+                    alert("form submission success")
+                    window.location.reload()
                 }),
                 error:((res)=>{
-                    alert("something went wrong");
+                    alert("something went wrong")
                 })
             })
         }
