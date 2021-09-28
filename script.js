@@ -53,13 +53,13 @@ $(document).ready(()=>{
                 url:"https://script.google.com/macros/s/AKfycbx9BkPEssHVrYxG09vYhzZnKAfgweYdQpDse6Isj9WNLwXZBv86fTIyapnSkLGHhlE/exec",
                 data:$("#form1").serialize(),
                 method:"post",
-                success:((res)=>{
-                    alert("form submission success")
-                    window.location.reload()
-                }),
-                error:((res)=>{
-                    alert("something went wrong")
-                })
+                success:function(res){
+                    alert("form submission success");
+                    window.location.reload();
+                },
+                error:function(res){
+                    alert("something went wrong");
+                }
             })
         }
     })
