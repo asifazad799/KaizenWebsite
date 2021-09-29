@@ -50,7 +50,7 @@ $(document).ready(()=>{
         },
         submitHandler:function(form){
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbwNjBv3csmdbc350LKdd7E6Ow037MM8fOgd_xGnnSOTIDTPmuy8iOzHjScAe8wqHb3y/exec",
+                url:"https://script.google.com/macros/s/AKfycbxuFMAbmK8qczKHQICQjo154Yzm0uc8oqOeJ6lN9NcxFLPerRrfKsncti_aG4iqXbgJ/exec",
                 data:$("#form1").serialize(),
                 method:"post",
                 success:function(res){
